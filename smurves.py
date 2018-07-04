@@ -124,8 +124,6 @@ def surgebinder(n_curves,
                 else:
                     force = 0.0
                     start_force = None
-            #print(len(partial_steps))
-            # Calculate the trajectory for the partial curve
             output = trajectory(force = force,
                                 velocity = velocity,
                                 direction = direction,
@@ -180,9 +178,6 @@ def surgebinder(n_curves,
                                        n_measure = n_measure)
         # Save the log-scale measurement points into the curves
         for i in range(0, len(curves)):
-            #print(len(steps))
-            #print(len(curves[i]))
-            #print()
             for j in range(0, len(curves[i])):
                 curves[i][j][0] = steps[j]
     # Remove curves with trajectories beyond the allowed range
