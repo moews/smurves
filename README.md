@@ -37,7 +37,7 @@ Three optional parameters include the choice of a logarithmic scale for the x-ax
 | convergence_point       | The left-side point of convergence for curves   |            |
 | log_scale (optional)    | Whether measurements should be on a log-scale   | False      |
 | trunc_norm (optional)   | Whether curves shouldn't stay closer to unity   | False      |
-| change_range (optional) | The x-axis percentiles before and after which no <br> gradient changes should take place | [0.1, 0.9] |
+| change_range (optional) | The x-axis percentiles before and after which no <br> gradient changes should take place for curves | [0.1, 0.9] |
 | start_force (optional)  | The point of the first deviation from unity     | None       |
 
 <br></br>
