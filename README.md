@@ -27,18 +27,20 @@ Three optional parameters include the choice of a logarithmic scale for the x-ax
 
 <br></br>
 
-| Variables               | Explanations                                    | Default    |
-|:------------------------|:------------------------------------------------|:-----------|
-| n_curves                | The number of curves you want to generate       |            |
-| x_interval              | The allowed x-axis interval for the curves      |            |
-| y_interval              | The allowed y-axis interval for the curves      |            |
-| n_measure               | The number of equally-spaced measurement points |            |
-| direction_maximum       | The maximum number of allowed gradient changes  |            |
-| convergence_point       | The left-side point of convergence for curves   |            |
-| log_scale (optional)    | Whether measurements should be on a log-scale   | False      |
-| trunc_norm (optional)   | Whether curves shouldn't stay closer to unity   | False      |
-| change_range (optional) | The x-axis percentiles before and after which no <br> gradient changes should take place for curves | [0.1, 0.9] |
-| start_force (optional)  | The point of the first deviation from unity     | None       |
+| Variables                    | Explanations                                    | Default    |
+|:-----------------------------|:------------------------------------------------|:-----------|
+| n_curves                     | The number of curves you want to generate       |            |
+| x_interval                   | The allowed x-axis interval for the curves      |            |
+| y_interval                   | The allowed y-axis interval for the curves      |            |
+| n_measure                    | The number of equally-spaced measurement points |            |
+| direction_maximum            | The maximum number of allowed gradient changes  |            |
+| convergence_point            | The left-side point of convergence for curves   |            |
+| log_scale (optional)         | Whether measurements should be on a log-scale   | False      |
+| trunc_norm (optional)        | Whether curves shouldn't stay closer to unity   | False      |
+| random_launch (optional)     | Whether the first launch angle should be random | False      |
+| right_convergence (optional) | Whether convergence should be on the right side | False      |
+| change_range (optional)      | The x-axis percentiles before and after which no <br> gradient changes should take place for curves | [0.1, 0.9] |
+| start_force (optional)       | The point of the first deviation from unity     | None       |
 
 <br></br>
 
