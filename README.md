@@ -59,4 +59,4 @@ curves = surgebinder(n_curves = 3
 
 Noting that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves look like this:
 
-<img src="/example.png" alt="logo" width="500px"/>
+<img src="/example.png" alt="logo" width="600px"/>
