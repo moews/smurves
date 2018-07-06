@@ -5,7 +5,7 @@
 
 Smurves is a tool for random smooth curve generation with a left-hand convergence point that allows for several constraints to be put on the generation process. If offers a more constrainable alternative to using, for example, Gaussian processes for that purpose. The approach is based on Newtonian [projectile motion](https://en.wikipedia.org/wiki/Projectile_motion) and takes its inspiration from Brandon Sanderson's book series [The Stormlight Archive](https://brandonsanderson.com/books/the-stormlight-archive/) and the books' magic system called "surgebinding". Specifically, the part that Sanderson calls a "basic lashing" deals with the change of direction and magnitude of gravity for an object.
 
-With that idea in mind, Smurves generates smooth curves by randomly sampling the gravitational force, as well as both points and number of changes in gravity direction, for one projectile per curve path and with velocity and angle being retained after gravitational direction switches. In essence, you can imagine the code's inner workings as firing a bullet at zero angle, and at random points gravity gets turned upside down.
+With that idea in mind, Smurves generates smooth curves by randomly sampling the gravitational force, as well as both points and number of changes in gravity direction, for one projectile per curve path and with velocity and angle being retained after gravitational direction switches. In essence, you can imagine the code's inner workings as firing a bullet at zero angle. At a random number of random points gravity gets turned upside down, with a random magnitude, while the bullet continues its flight, all subject to the constraints set by the user for the properties of the required curves.
 
 ### Installation
 
