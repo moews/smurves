@@ -22,6 +22,8 @@ Alternatively, the file `scadda.py` can be downloaded from the folder `scadda` i
 In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of equally spaced measurement points, the maximum number of gradient changes in the curves, and a left-hand convergence point with the same x-axis value as the left side of the `x_interval parameter`. Three optional parameters include the choice of a logarithmic scale for the x-axis, the use of a mirrored truncated Gaussian distribution instead of the default uniform distribution to sample gravitational forces from in order to let most curves not deviate too far, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table further below. can be
 
 
+
+
 | Variables              | Explanations                                    | Default |
 |:-----------------------|:------------------------------------------------|:--------|
 | n_curves               | The number of curves you want to generate       |         |
@@ -33,6 +35,8 @@ In addition to the number of curves and interval constraints for both x-axis and
 | log_scale (optional)   | Whether measurements should be on a log-scale   | False   |
 | trunc_norm (optional)  | Whether curves shouldn't stay closer to unity   | False   |
 | start_force (optional) | The point of the first deviation from unity     | None    |
+
+
 
 
 After the installation via [PyPI](https://pypi.org), or using the `smurves.py` file locally, the usage looks like this:
