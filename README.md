@@ -5,7 +5,7 @@
 
 Smurves is a tool for random smooth curve generation with a left-hand convergence point that allows for several constraints to be put on the generation process. If offers a more constrainable alternative to using, for example, Gaussian processes for that purpose. The approach is based on Newtonian [projectile motion](https://en.wikipedia.org/wiki/Projectile_motion) and takes its inspiration from Brandon Sanderson's book series [The Stormlight Archive](https://brandonsanderson.com/books/the-stormlight-archive/) and the books' magic system called "surgebinding". Specifically, the part that Sanderson calls a "basic lashing" deals with the change of direction and magnitude of gravity for an object.
 
-With that idea in mind, Smurves generates smooth curves by randomly sampling the gravitational force, as well as both points and number of changes in gravity direction, for one projectile per curve path and with velocity and angle being retained through gravitational direction switches. In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of equally spaced measurement points, the maximum number of gradient changes in the curves, and a left-hand convergence point with the same x-axis value as the left side of the x_interval parameter. These parameters, as well as three optional ones, are described in the table further below.
+With that idea in mind, Smurves generates smooth curves by randomly sampling the gravitational force, as well as both points and number of changes in gravity direction, for one projectile per curve path and with velocity and angle being retained through gravitational direction switches. 
 
 ### Installation
 
@@ -19,9 +19,8 @@ Alternatively, the file `scadda.py` can be downloaded from the folder `scadda` i
 
 ### Quickstart guide
 
-SCADDA requires the user to provide spatial data (`s_data`) as a Nx2 array for N data points, with longitudes in the first and latitudes in the second column, as well as the same number of time series per spatial data point (`t_data`) as an NxM array with M as the length of the time series. The spatial (`s_limit`) and temporal (`t_limit`) maximal distances for points to be considered part of the same cluster, as well as the steepness for the logistic function used for the distance re-scaling (`steepness`) and the mininum number of neighbors required for a cluster (`minimum_neighbors`), also have to be provided. In addition, the window size for the [Paliwal adjustment window](https://ieeexplore.ieee.org/document/1171506/) can be set (`window_param`), but is optional and will default to a data-dependent rule-of-thumb calculation.
+In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of equally spaced measurement points, the maximum number of gradient changes in the curves, and a left-hand convergence point with the same x-axis value as the left side of the `x_interval parameter`. Three optional parameters include the choice of a logarithmic scale for the x-axis, the use of a mirrored truncated Gaussian distribution instead of the default uniform distribution to sample gravitational forces from in order to let most curves not deviate too far, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table further below. can be
 
-After the installation via [PyPI](https://pypi.org), or using the `scadda.py` file locally, the usage looks like this:
 
 | Variables              | Explanations                                    | Default |
 |:-----------------------|:------------------------------------------------|:--------|
@@ -34,6 +33,9 @@ After the installation via [PyPI](https://pypi.org), or using the `scadda.py` fi
 | log_scale (optional)   | Whether measurements should be on a log-scale   | False   |
 | trunc_norm (optional)  | Whether curves shouldn't stay closer to unity   | False   |
 | start_force (optional) | The point of the first deviation from unity     | None    |
+
+
+After the installation via [PyPI](https://pypi.org), or using the `smurves.py` file locally, the usage looks like this:
 
 ```python
 from smurves import surgebinder
