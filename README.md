@@ -57,6 +57,6 @@ curves = surgebinder(n_curves = 3
                      start_force = 0.01)
 ```
 
-Noting that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves look like this:
+Noting that we chose a logarithmic scale and no deviations before x = 0.01 the plotted curves are:
 
 <img src="/example.png" alt="logo" width="600px"/>
