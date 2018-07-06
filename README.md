@@ -46,14 +46,17 @@ After the installation via [PyPI](https://pypi.org), or using the `smurves.py` f
 ```python
 from smurves import surgebinder
 
-curves = surgebinder(n_curves = 100,
-                     x_interval = [0, 5],
-                     y_interval = [0, 1],
-                     n_measure = 100,
+curves = surgebinder(n_curves = 3
+                     x_interval = [0.001, 10.0],
+                     y_interval = [0.0, 5.0],
+                     n_measure = 600,
                      direction_maximum = 1,
-                     convergence_point = [0, 2],
+                     convergence_point = [0.001, 1.0],
                      log_scale = True,
                      trunc_norm = False,
-                     start_force = 0.1)
+                     start_force = 0.01)
 ```
 
+Noting that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves look like this:
+
+<img src="/example.png" alt="logo" width="500px"/>
