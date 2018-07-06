@@ -54,8 +54,6 @@ curves = surgebinder(n_curves = 3
                      direction_maximum = 1,
                      convergence_point = [0.001, 1.0],
                      log_scale = True,
-                     trunc_norm = False,
-                     change_range = None,
                      start_force = 0.01)
 ```
 
