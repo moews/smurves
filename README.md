@@ -1,6 +1,6 @@
 # Smurves
 
-#### The triple-random constrainable smooth curve generator for function perturbation
+#### The triple-random smooth curve generator for function perturbation
 <img src="/logo.png" alt="logo" width="200px"/>
 
 Smurves is a tool for random smooth curve generation that allows for several constraints to be put on the generation process. If offers a more constrainable alternative to using, for example, Gaussian processes for that purpose. The approach is based on Newtonian [projectile motion](https://en.wikipedia.org/wiki/Projectile_motion) and takes its inspiration from Brandon Sanderson's book series [The Stormlight Archive](https://brandonsanderson.com/books/the-stormlight-archive/) and the books' magic system called "surgebinding". Specifically, the part that Sanderson calls a "basic lashing" deals with the change of direction and magnitude of gravity for an object.
