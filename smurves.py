@@ -451,7 +451,6 @@ def trajectory(force,
         remains the same, the final velocity at the end of the partial
         path that is among the returned values is calculated separately.
 
-
     direction : int from the set {-1, 1}
         The direction of gravitational influence for the calculated
         partial trajectory, i.e. an either positive or negative value
@@ -476,7 +475,6 @@ def trajectory(force,
         The x-axis measurement points at which the location of the
         projectile along the y-axis are to be measured for the partial
         trajectory for the given part of the curve calculation.
-
 
     horizontal_start : float
         The correction value that ensures that the initial horizontal
