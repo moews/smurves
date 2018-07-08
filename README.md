@@ -25,7 +25,7 @@ Alternatively, the file `smurves.py` can be downloaded from the folder `smurves`
 
 The descriptions and example usage below provide a quick tutorial on Smurves. In addition, the `examples.ipynb` Jupyter Notebook in the `examples` folder in this repository show the use of the tool for various constraints and with explanations for each parameter set, and with the code necessary to plot the curves.
 
-In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of measurement points amd the maximum number of gradient changes in the curves.
+In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of measurement points amd the maximum number of directional changes per curve.
 
 Six optional parameters include the placement of a point in which the curves should converge, the choice of a logarithmic scale for the x-axis, the choice to launch the curve trajectories at random instead of zero angles, the choice to let the curves converge on the right instead of the left side if a convergence point is provided, the percentiles along the x-axis before and which no directional gravity changes should be implemented, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table further below.
 
