@@ -65,6 +65,6 @@ curves = surgebinder(n_curves = 10,
                      start_force = 0.01)
 ```
 
-Note that if we want a logarithmic scale, the x-axis interval has to provide powers of ten, e.g. 0.1, 10 or 1000. Given that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves are:
+Note that if we want a logarithmic scale, the x-axis interval, as well as the `start_force` parameter to enforce no deviation before that value, have to provide powers of ten, e.g. 0.1, 10 or 1000. Given that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves are:
 
 <img src="/example.png" alt="logo" width="600px"/>
