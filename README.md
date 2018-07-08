@@ -27,7 +27,7 @@ The descriptions and example usage below provide a quick tutorial on Smurves. In
 
 In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of measurement points amd the maximum number of directional changes per curve.
 
-Six optional parameters include the placement of a point in which the curves should converge, the choice of a logarithmic scale for the x-axis, the choice to launch the curve trajectories at random instead of zero angles, the choice to let the curves converge on the right instead of the left side if a convergence point is provided, the percentiles along the x-axis before and which no directional gravity changes should be implemented, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table further below.
+Six optional parameters include the placement of a point in which the curves should converge, the choice of a logarithmic scale for the x-axis, the choice to launch the curve trajectories at random instead of zero angles, the choice to let the curves converge on the right instead of the left side if a convergence point is provided, the percentiles along the x-axis before and which no directional gravity changes should be implemented, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table below.
 
 <br></br>
 
@@ -65,6 +65,6 @@ curves = surgebinder(n_curves = 10,
                      start_force = 0.01)
 ```
 
-Note that if we want a logarithmic scale, the x-axis interval, as well as the `start_force` parameter to enforce no deviation before that value, have to provide powers of ten, e.g. 0.1, 10 or 1000. Given that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves are:
+Note that if we want a logarithmic scale, the x-axis interval, as well as the `start_force` parameter to enforce no deviation before that value, have to provide powers of ten, e.g. 0.1, 10 or 1000. Given that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves take the following form:
 
 <img src="/example.png" alt="logo" width="600px"/>
