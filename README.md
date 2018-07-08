@@ -23,7 +23,7 @@ Alternatively, the file `smurves.py` can be downloaded from the folder `smurves`
 
 ### Quickstart guide
 
-The descriptions and example usage below provide a quick tutorial on Smurves. In addition, the `examples.ipynb` Jupyter Notebook in the `examples` folder in this repository show the use of the tool for various constraints, and with the code necessary to plot the curves.
+The descriptions and example usage below provide a quick tutorial on Smurves. In addition, the `examples.ipynb` Jupyter Notebook in the `examples` folder in this repository show the use of the tool for various constraints and with explanations for each parameter set, and with the code necessary to plot the curves.
 
 In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of equally spaced measurement points, the maximum number of gradient changes in the curves, and a left-hand convergence point with the same x-axis value as the left side of the `x_interval` parameter.
 
@@ -59,8 +59,10 @@ curves = surgebinder(n_curves = 10,
                      direction_maximum = 3,
                      convergence_point = [0.001, 1.0],
                      log_scale = True,
-                     start_force = 0.01,
-                     change_range = [0.2, 0.8])
+                     random_launch = False,
+                     right_convergence = False,
+                     change_range = [0.2, 0.8],
+                     start_force = 0.01)
 ```
 
 Noting that we chose a logarithmic scale and no deviations before x = 0.01, the plotted curves are:
