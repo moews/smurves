@@ -25,9 +25,9 @@ Alternatively, the file `smurves.py` can be downloaded from the folder `smurves`
 
 The descriptions and example usage below provide a quick tutorial on Smurves. In addition, the `examples.ipynb` Jupyter Notebook in the `examples` folder in this repository show the use of the tool for various constraints and with explanations for each parameter set, and with the code necessary to plot the curves.
 
-In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of equally spaced measurement points, the maximum number of gradient changes in the curves, and a left-hand convergence point with the same x-axis value as the left side of the `x_interval` parameter.
+In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of measurement points amd the maximum number of gradient changes in the curves.
 
-Three optional parameters include the choice of a logarithmic scale for the x-axis, the use of a mirrored truncated Gaussian distribution instead of the default uniform distribution to sample gravitational forces from in order to let most curves not deviate too far, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table further below.
+Six optional parameters include the placement of a point in which the curves should converge, the choice of a logarithmic scale for the x-axis, the choice to launch the curve trajectories at random instead of zero angles, the choice to let the curves converge on the right instead of the left side if a convergence point is provided, the percentiles along the x-axis before and which no directional gravity changes should be implemented, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table further below.
 
 <br></br>
 
@@ -38,7 +38,7 @@ Three optional parameters include the choice of a logarithmic scale for the x-ax
 | y_interval                   | The allowed y-axis interval for the curves      |            |
 | n_measure                    | The number of equally-spaced measurement points |            |
 | direction_maximum            | The maximum number of allowed gradient changes  |            |
-| convergence_point            | The left-side point of convergence for curves   |            |
+| convergence_point (optional) | The left-side point of convergence for curves   |            |
 | log_scale (optional)         | Whether measurements should be on a log-scale   | False      |
 | random_launch (optional)     | Whether the first launch angle should be random | False      |
 | right_convergence (optional) | Whether convergence should be on the right side | False      |
