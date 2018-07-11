@@ -43,6 +43,7 @@ Six optional parameters include the placement of a point in which the curves sho
 | random_launch (optional)     | Whether the first launch angle should be random | False      |
 | right_convergence (optional) | Whether convergence should be on the right side | False      |
 | change_range (optional)      | The x-axis percentiles before and after which no <br> gradient changes should take place for curves | [0.1, 0.9] |
+| change_spacing (optional)    | The minimum space in measurement points between the <br> different points of a gravitational force change | None |
 |change_ratio (optional)       | The multiplier for the last partial trajectory to get <br> the upper limit for the next partial trajectory's force | None |
 | start_force (optional)       | The point of the first deviation from unity     | None       |
 
