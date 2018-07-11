@@ -60,8 +60,6 @@ curves = surgebinder(n_curves = 10,
                      direction_maximum = 3,
                      convergence_point = [0.001, 1.0],
                      log_scale = True,
-                     random_launch = False,
-                     right_convergence = False,
                      change_range = [0.2, 0.8],
                      start_force = 0.01)
 ```
