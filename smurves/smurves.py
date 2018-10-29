@@ -400,7 +400,7 @@ def generator(n_curves,
               progress_update,
               done_curves):
     """
-    Generate curves, discard them if necessary and give updaes.
+    Generate curves, discard them if necessary and give updates.
 
     This function generates curves based on its input, discards them if
     they fall outside of the required y-axis interval, and takes care of
