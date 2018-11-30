@@ -7,9 +7,9 @@ Smurves is a tool for random smooth curve generation that allows for several con
 
 With that idea in mind, Smurves generates smooth curves by randomly sampling the gravitational force, as well as locations and the number of changes in the direction of gravity, for one projectile per curve path and making sure that the constraints are adhered to, and with velocity and angle being retained after gravitational direction switches.
 
-In essence, you can imagine the code's inner workings as firing a bullet at either zero angle or a random angle, from a specified or random point at either the left or the right side of the x-axis interval, depending on the user preferences. At a random number of random points, gravity gets turned upside down with a random magnitude, while the bullet continues its flight, all subject to the constraints set by the user for the properties of the required curves.
+In essence, the code's inner workings can be imagined as firing a bullet at either zero angle or a random angle, from a specified or random point at either the left or the right side of the x-axis interval, depending on the user preferences. At a random number of random points, gravity gets turned upside down with a random magnitude, while the bullet continues its flight, all subject to the constraints set by the user for the properties of the required curves.
 
-The motivation for this approach was to find a novel way of generating utterly random curves with certain constraints to perturbate functions, for example the [matter power spectrum](https://en.wikipedia.org/wiki/Matter_power_spectrum) in cosmology.
+The motivation for this approach was to find a novel way of generating utterly random curves with certain constraints to smoothly perturbate functions, for example the [matter power spectrum](https://en.wikipedia.org/wiki/Matter_power_spectrum) in cosmology.
 
 ### Installation
 
