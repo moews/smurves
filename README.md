@@ -11,7 +11,7 @@ In essence, the code's inner workings can be imagined as firing a bullet at eith
 
 The motivation for this approach was to find a novel way¹ of generating utterly random curves with certain constraints to smoothly perturbate functions, for example the [matter power spectrum](https://en.wikipedia.org/wiki/Matter_power_spectrum) in cosmology.
 
-<small>¹</small> <sub><sup>Because it's from a novel. This documentation comes fully equipped with bad jokes.</sup></sub>
+<sub><sup>¹ Because it's from a novel. This documentation comes fully equipped with bad jokes.</sup></sub>
 
 ### Installation
 
