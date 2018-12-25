@@ -15,7 +15,7 @@ The motivation for this approach was to find a novel way* of generating utterly 
 
 ### Installation
 
-Smurves can be installed via [PyPI](https://pypi.org/smurves/), with a single command in the terminal:
+Smurves can be installed via [PyPI](https://pypi.org/), with a single command in the terminal:
 
 ```
 pip install smurves
