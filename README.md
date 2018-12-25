@@ -1,6 +1,6 @@
 # Smurves
 
-### The triple-random smooth curve generator for function perturbation
+### The triple-random constrainable curve generator for smooth function perturbation
 <img src="/logo.png" alt="logo" width="200px"/>
 
 Smurves is a tool for random smooth curve generation that allows for several constraints to be put on the generation process. If offers a more constrainable alternative to using, for example, Gaussian processes for that purpose. The method is based on Newtonian [projectile motion](https://en.wikipedia.org/wiki/Projectile_motion) and takes its inspiration from Brandon Sanderson's book series [The Stormlight Archive](https://brandonsanderson.com/books/the-stormlight-archive/) and the books' magic system called "surgebinding". More specifically, this approach makes note of the parts that deal with the change in direction and magnitude of gravity for an in-flight object, which provided the initial concept.
@@ -15,7 +15,7 @@ The motivation for this approach was to find a novel way* of generating utterly 
 
 ### Installation
 
-Smurves can be installed via [PyPI](https://pypi.org), with a single command in the terminal:
+Smurves can be installed via [PyPI](https://pypi.org/smurves/), with a single command in the terminal:
 
 ```
 pip install smurves
