@@ -9,7 +9,7 @@ With this idea in mind, Smurves generates smooth curves by randomly sampling the
 
 In essence, the code's inner workings can be imagined as firing a bullet at either zero angle or a random angle, from a specified or random point at either the left or the right side of the x-axis interval, depending on the user preferences. At a random number of random points, gravity gets turned upside down with a new random magnitude while the bullet continues its flight, all subject to the constraints set by the user for the properties of the required curves.
 
-The motivation for this approach was to find a novel way* of generating utterly random curves with certain constraints to smoothly perturbate functions, for example the [matter power spectrum](https://en.wikipedia.org/wiki/Matter_power_spectrum) in cosmology. A more detailed description of the methodology, as well as the first application of the tool to scientific inquiry, can be found in [this paper](https://arxiv.org/abs/1812.09786) on the viability of type SN Ia supernova data to test the standard model of cosmology.
+The motivation for this approach was to find a novel way* of generating utterly random curves with certain constraints to smoothly perturbate functions, for example the [matter power spectrum](https://en.wikipedia.org/wiki/Matter_power_spectrum) in cosmology. A more detailed description of the methodology, as well as the first application of the tool to scientific inquiry, can be found in [this paper](https://arxiv.org/abs/1812.09786) on the viability of type Ia supernova data to test the standard model of cosmology.
 
 <sub><sup>* Because it's from a novel. This documentation comes fully equipped with bad jokes.</sup></sub>
 
