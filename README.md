@@ -40,7 +40,7 @@ Six optional parameters include the placement of a point in which the curves sho
 | y_interval                   | The allowed y-axis interval for the curves      |            |
 | n_measure                    | The number of equally-spaced measurement points |            |
 | direction_maximum            | The maximum number of allowed gradient changes  |            |
-| convergence_point (optional) | The left-side point of convergence for curves   |            |
+| convergence_point (optional) | The left-side point of convergence for curves   | None       |
 | log_scale (optional)         | Whether measurements should be on a log-scale   | False      |
 | random_launch (optional)     | Whether the first launch angle should be random | False      |
 | right_convergence (optional) | Whether convergence should be on the right side | False      |
